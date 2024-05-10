@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 id="title">Summer Party Survey</h1>
+    <p id="description">
+      We are commited to provide best possible experience to every guest. We
+      would need your help to do that, so please give us few minutes of your
+      time and fill in the survey. Let's go!
+    </p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Full Name: </label>
+      <input
+        id="name"
+        name="name"
+        type="text"
+        placeholder="John Snow"
+        required
+      />
+      <label id="email-label" for="email">Email: </label>
+      <input
+        id="email"
+        name="email"
+        type="email"
+        placeholder="john.snow@gmail.com"
+        required
+      />
+      <label id="number-label" for="number">Number of people: </label>
+      <input
+        id="number"
+        name="number"
+        type="number"
+        min="2"
+        max="25"
+        placeholder="2"
+      />
+      <label id="dropdown-label" for="dropdown">Party Theme: </label>
+      <select id="dropdown" name="dropdown">
+        <option value="formal">Formal</option>
+        <option value="smart_casual">Smart casual</option>
+        <option value="casual">Casual</option>
+        <option value="beech_party">Beech Party</option>
+        <option value="pirates">Pirates</option>
+      </select>
+      <fieldset>
+        <legend>Would you like a live music?</legend>
+        <input id="radio-yes" type="radio" name="live_music" value="yes" />
+        <label class="radio" for="radio-yes">Yes</label>
+        <input id="radio-no" type="radio" name="live_music" value="no" />
+        <label class="radio" for="radio-no">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Please select foods you would like to be served.</legend>
+        <input id="sushi" type="checkbox" name="food" value="sushi" />
+        <label for="sushi">Sushi</label>
+        <input id="cheese" type="checkbox" name="food" value="cheese" />
+        <label for="cheese">Cheese Platter</label>
+        <input id="meat" type="checkbox" name="food" value="meat" />
+        <label for="meat">Meat Platter</label>
+        <input id="pizza" type="checkbox" name="food" value="pizza" />
+        <label for="pizza">Pizza</label>
+        <input id="salar" type="checkbox" name="food" value="salad" />
+        <label for="salad">Salad</label>
+      </fieldset>
+      <label for="extras">Any additional requirements?</label>
+      <textarea id="extras" type="textarea" placeholder="I would like...">
+      </textarea>
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>
