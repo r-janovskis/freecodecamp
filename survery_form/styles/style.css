@@ -1,0 +1,64 @@
+html {
+  font-size: 16px;
+  font-family: "Merriweather", sans-serif;
+}
+
+body {
+  background-color: navy;
+}
+
+div {
+  background-color: white;
+  max-width: 1200px;
+  border-radius: 3rem;
+  margin: auto;
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 2rem;
+}
+
+h1 {
+  padding-top: 2rem;
+}
+
+form {
+  margin: 2rem;
+  padding-bottom: 2rem;
+}
+
+fieldset {
+  margin: 1rem 0;
+  border-radius: 1rem;
+}
+
+.element {
+  margin: 0.5rem;
+}
+
+#name,
+#number,
+select,
+#email {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+}
+
+textarea {
+  display: block;
+  width: 95%;
+  min-height: 8rem;
+  margin: 0.5rem;
+}
+
+#submit {
+  display: block;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+}
