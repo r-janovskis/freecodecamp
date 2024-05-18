@@ -12,162 +12,174 @@
     <script src="./scripts/parseForm.js" defer></script>
   </head>
   <body>
-    <div>
-      <h1 id="title">Life Satisfaction Survey</h1>
-      <p id="description">
-        We would like to assess the level of life satisfaction. Please take few
-        minutes to fill in the survey below.
-      </p>
-      <form id="survey-form" action="./result.html" methog="get">
-        <fieldset>
-          <legend>General information</legend>
-          <div class="element">
-            <label id="name-label" for="name">Full Name: </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="John Snow"
-              required
-            />
-          </div>
-          <div class="element">
-            <label id="email-label" for="email">Email: </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="john.snow@gmail.com"
-              required
-            />
-          </div>
-          <div class="element">
-            <label id="number-label" for="number">Age: </label>
-            <input
-              id="number"
-              name="number"
-              type="number"
-              min="1"
-              max="100"
-              placeholder="30"
-            />
-          </div>
-          <div class="element">
-            <label id="dropdown-label" for="dropdown">Occupation: </label>
-            <select id="dropdown" name="dropdown">
-              <option value="Teacher">Education</option>
-              <option value="Engineer">Engineer</option>
-              <option value="IT">IT</option>
-              <option value="Military">Military</option>
-              <option value="Finance sector">Finance sector</option>
-            </select>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            How would you rate your satisfaction with life in Ireland?
-          </legend>
-          <div class="element">
-            <input
-              id="radio-5"
-              type="radio"
-              name="satisfaction"
-              value="Very Satisfied"
-            />
-            <label class="radio" for="radio-5">Very Satisfied</label>
-          </div>
-          <div class="element">
-            <input
-              id="radio-5"
-              type="radio"
-              name="satisfaction"
-              value="Satisfied"
-            />
-            <label class="radio" for="radio-5">Satisfied</label>
-          </div>
-          <div class="element">
-            <input
-              id="radio-3"
-              type="radio"
-              name="satisfaction"
-              value="Neutral"
-            />
-            <label class="radio" for="radio-3">Neutral</label>
-          </div>
-          <div class="element">
-            <input
-              id="radio-2"
-              type="radio"
-              name="satisfaction"
-              value="Unsatisfied"
-            />
-            <label class="radio" for="radio-2">Unsatisfied</label>
-          </div>
-          <div class="element">
-            <input
-              id="radio-1"
-              type="radio"
-              name="satisfaction"
-              value=" Very Unsatisfied"
-            />
-            <label class="radio" for="radio-1">Very Unsatisfied</label>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>
-            What areas should be improved for your satisfaction with life to
-            increase?
-          </legend>
-          <div class="element">
-            <input
-              id="public_transport"
-              type="checkbox"
-              name="improvement"
-              value="Public Transport"
-            />
-            <label for="public_transport">Public Transport</label>
-          </div>
-          <div class="element">
-            <input
-              id="Infrastructure"
-              type="checkbox"
-              name="improvement"
-              value="Infrastructure"
-            />
-            <label for="cheese">Infrastructure</label>
-          </div>
-          <div class="element">
-            <input
-              id="health_care"
-              type="checkbox"
-              name="improvement"
-              value="Health Care"
-            />
-            <label for="health_care">Health Care</label>
-          </div>
-          <div class="element">
-            <input
-              id="education"
-              type="checkbox"
-              name="improvement"
-              value="Education System"
-            />
-            <label for="education">Education System</label>
-          </div>
-          <div class="element">
-            <input
-              id="living"
-              type="checkbox"
-              name="improvement"
-              value="Living Expenses"
-            />
-            <label for="living">Living Expenses</label>
-          </div>
-        </fieldset>
-        <label for="extras">Place for comments</label>
-        <textarea id="extras" placeholder="I think..."> </textarea>
-        <input id="submit" type="submit" value="Complete Survey" />
-      </form>
-    </div>
+    <main id="survey_page">
+      <div class="container">
+        <h1 id="title">Life Satisfaction Survey</h1>
+        <p id="description">
+          We would like to assess the level of life satisfaction. Please take
+          few minutes to fill in the survey below.
+        </p>
+        <form id="survey-form" action="./result.html">
+          <fieldset>
+            <legend>General information</legend>
+            <div class="element">
+              <label id="name-label" for="name">Full Name: </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="John Snow"
+                required
+              />
+            </div>
+            <div class="element">
+              <label id="email-label" for="email">Email: </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="john.snow@gmail.com"
+                required
+              />
+            </div>
+            <div class="element">
+              <label id="number-label" for="number">Age: </label>
+              <input
+                id="number"
+                name="number"
+                type="number"
+                min="1"
+                max="100"
+                placeholder="30"
+              />
+            </div>
+            <div class="element">
+              <label id="dropdown-label" for="dropdown">Occupation: </label>
+              <select id="dropdown" name="dropdown">
+                <option value="Teacher">Education</option>
+                <option value="Engineer">Engineer</option>
+                <option value="IT">IT</option>
+                <option value="Military">Military</option>
+                <option value="Finance sector">Finance sector</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              How would you rate your satisfaction with life in Ireland?
+            </legend>
+            <div class="element">
+              <input
+                id="radio-5"
+                class="radio"
+                type="radio"
+                name="satisfaction"
+                value="Very Satisfied"
+              />
+              <label for="radio-5">Very Satisfied</label>
+            </div>
+            <div class="element">
+              <input
+                id="radio-4"
+                class="radio"
+                type="radio"
+                name="satisfaction"
+                value="Satisfied"
+              />
+              <label for="radio-4">Satisfied</label>
+            </div>
+            <div class="element">
+              <input
+                id="radio-3"
+                class="radio"
+                type="radio"
+                name="satisfaction"
+                value="Neutral"
+              />
+              <label for="radio-3">Neutral</label>
+            </div>
+            <div class="element">
+              <input
+                id="radio-2"
+                class="radio"
+                type="radio"
+                name="satisfaction"
+                value="Unsatisfied"
+              />
+              <label for="radio-2">Unsatisfied</label>
+            </div>
+            <div class="element">
+              <input
+                id="radio-1"
+                class="radio"
+                type="radio"
+                name="satisfaction"
+                value=" Very Unsatisfied"
+              />
+              <label for="radio-1">Very Unsatisfied</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>
+              What areas should be improved for your satisfaction with life to
+              increase?
+            </legend>
+            <div class="element">
+              <input
+                id="public_transport"
+                class="checkbox"
+                type="checkbox"
+                name="improvement"
+                value="Public Transport"
+              />
+              <label for="public_transport">Public Transport</label>
+            </div>
+            <div class="element">
+              <input
+                id="Infrastructure"
+                class="checkbox"
+                type="checkbox"
+                name="improvement"
+                value="Infrastructure"
+              />
+              <label for="cheese">Infrastructure</label>
+            </div>
+            <div class="element">
+              <input
+                id="health_care"
+                class="checkbox"
+                type="checkbox"
+                name="improvement"
+                value="Health Care"
+              />
+              <label for="health_care">Health Care</label>
+            </div>
+            <div class="element">
+              <input
+                id="education"
+                class="checkbox"
+                type="checkbox"
+                name="improvement"
+                value="Education System"
+              />
+              <label for="education">Education System</label>
+            </div>
+            <div class="element">
+              <input
+                id="living"
+                class="checkbox"
+                type="checkbox"
+                name="improvement"
+                value="Living Expenses"
+              />
+              <label for="living">Living Expenses</label>
+            </div>
+          </fieldset>
+          <label for="comment">Place for comments</label>
+          <textarea id="comment" placeholder="I think..."> </textarea>
+          <input id="submit" type="submit" value="Complete Survey" />
+        </form>
+      </div>
+    </main>
   </body>
 </html>

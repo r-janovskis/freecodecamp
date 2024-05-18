@@ -1,19 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 16px;
   font-family: "Merriweather", sans-serif;
 }
 
-body {
+#survey_page,
+#results_page {
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+  min-height: 100vh;
   /*background-color: navy;*/
+}
+
+#survey_page {
   background-image: url(../images/work.jpg);
   background-size: cover;
 }
 
-div {
+#results_page {
+  background-image: url(../images/end.jpg);
+  background-size: cover;
+}
+
+.container {
   background-color: rgb(160, 82, 45);
   max-width: 1200px;
   border-radius: 3rem;
-  margin: auto;
+  margin: 2rem auto;
   color: white;
   opacity: 0.9;
 }
@@ -21,7 +39,7 @@ div {
 h1,
 p {
   text-align: center;
-  margin: 2rem;
+  margin: 1rem 2rem;
 }
 
 h1 {
@@ -30,6 +48,12 @@ h1 {
 
 form {
   margin: 2rem;
+  padding-bottom: 2rem;
+}
+
+article {
+  margin-top: 5rem;
+  margin-left: 2rem;
   padding-bottom: 2rem;
 }
 
