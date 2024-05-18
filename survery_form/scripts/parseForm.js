@@ -45,5 +45,3 @@ function handleSubmit(e) {
 
 const form = document.getElementById("survey-form");
 form.addEventListener("submit", handleSubmit);
-
-//export { formValues };
