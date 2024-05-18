@@ -1,6 +1,7 @@
 function handleSubmit(e) {
-  e.preventDefault();
+  //e.preventDefault();
   const nameValue = document.getElementById("name").value;
+
   alert(nameValue);
 }
 

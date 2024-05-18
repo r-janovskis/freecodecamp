@@ -13,13 +13,12 @@
   </head>
   <body>
     <div>
-      <h1 id="title">Summer Party Survey</h1>
+      <h1 id="title">Life Satisfaction Survey</h1>
       <p id="description">
-        We are commited to provide best possible experience to every guest. We
-        would need your help to do that, so please give us few minutes of your
-        time and fill in the survey. Let's go!
+        We would like to assess the level of life satisfaction. Please take few
+        minutes to fill in the survey below.
       </p>
-      <form id="survey-form">
+      <form id="survey-form" action="./result.html" methog="get">
         <fieldset>
           <legend>General information</legend>
           <div class="element">
@@ -43,63 +42,130 @@
             />
           </div>
           <div class="element">
-            <label id="number-label" for="number">Number of people: </label>
+            <label id="number-label" for="number">Age: </label>
             <input
               id="number"
               name="number"
               type="number"
-              min="2"
-              max="25"
-              placeholder="2"
+              min="1"
+              max="100"
+              placeholder="30"
             />
           </div>
           <div class="element">
-            <label id="dropdown-label" for="dropdown">Party Theme: </label>
+            <label id="dropdown-label" for="dropdown">Occupation: </label>
             <select id="dropdown" name="dropdown">
-              <option value="formal">Formal</option>
-              <option value="smart_casual">Smart casual</option>
-              <option value="casual">Casual</option>
-              <option value="beech_party">Beech Party</option>
-              <option value="pirates">Pirates</option>
+              <option value="Teacher">Education</option>
+              <option value="Engineer">Engineer</option>
+              <option value="IT">IT</option>
+              <option value="Military">Military</option>
+              <option value="Finance sector">Finance sector</option>
             </select>
           </div>
         </fieldset>
         <fieldset>
-          <legend>Would you like to have live music?</legend>
+          <legend>
+            How would you rate your satisfaction with life in Ireland?
+          </legend>
           <div class="element">
-            <input id="radio-yes" type="radio" name="live_music" value="yes" />
-            <label class="radio" for="radio-yes">Yes</label>
+            <input
+              id="radio-5"
+              type="radio"
+              name="satisfaction"
+              value="Very Satisfied"
+            />
+            <label class="radio" for="radio-5">Very Satisfied</label>
           </div>
           <div class="element">
-            <input id="radio-no" type="radio" name="live_music" value="no" />
-            <label class="radio" for="radio-no">No</label>
+            <input
+              id="radio-5"
+              type="radio"
+              name="satisfaction"
+              value="Satisfied"
+            />
+            <label class="radio" for="radio-5">Satisfied</label>
+          </div>
+          <div class="element">
+            <input
+              id="radio-3"
+              type="radio"
+              name="satisfaction"
+              value="Neutral"
+            />
+            <label class="radio" for="radio-3">Neutral</label>
+          </div>
+          <div class="element">
+            <input
+              id="radio-2"
+              type="radio"
+              name="satisfaction"
+              value="Unsatisfied"
+            />
+            <label class="radio" for="radio-2">Unsatisfied</label>
+          </div>
+          <div class="element">
+            <input
+              id="radio-1"
+              type="radio"
+              name="satisfaction"
+              value=" Very Unsatisfied"
+            />
+            <label class="radio" for="radio-1">Very Unsatisfied</label>
           </div>
         </fieldset>
         <fieldset>
-          <legend>Please select foods you would like to be served.</legend>
+          <legend>
+            What areas should be improved for your satisfaction with life to
+            increase?
+          </legend>
           <div class="element">
-            <input id="sushi" type="checkbox" name="food" value="sushi" />
-            <label for="sushi">Sushi</label>
+            <input
+              id="public_transport"
+              type="checkbox"
+              name="improvement"
+              value="Public Transport"
+            />
+            <label for="public_transport">Public Transport</label>
           </div>
           <div class="element">
-            <input id="cheese" type="checkbox" name="food" value="cheese" />
-            <label for="cheese">Cheese Platter</label>
+            <input
+              id="Infrastructure"
+              type="checkbox"
+              name="improvement"
+              value="Infrastructure"
+            />
+            <label for="cheese">Infrastructure</label>
           </div>
           <div class="element">
-            <input id="meat" type="checkbox" name="food" value="meat" />
-            <label for="meat">Meat Platter</label>
+            <input
+              id="health_care"
+              type="checkbox"
+              name="improvement"
+              value="Health Care"
+            />
+            <label for="health_care">Health Care</label>
           </div>
           <div class="element">
-            <input id="pizza" type="checkbox" name="food" value="pizza" />
-            <label for="pizza">Pizza</label>
+            <input
+              id="education"
+              type="checkbox"
+              name="improvement"
+              value="Education System"
+            />
+            <label for="education">Education System</label>
           </div>
           <div class="element">
-            <input id="salad" type="checkbox" name="food" value="salad" />
-            <label for="salad">Salad</label>
+            <input
+              id="living"
+              type="checkbox"
+              name="improvement"
+              value="Living Expenses"
+            />
+            <label for="living">Living Expenses</label>
           </div>
         </fieldset>
-        <label for="extras">Any additional requirements?</label>
-        <textarea id="extras" placeholder="I would like..."> </textarea>
+        <label for="extras">Place for comments</label>
+        <textarea id="extras" placeholder="I think..."> </textarea>
         <input id="submit" type="submit" value="Complete Survey" />
       </form>
     </div>
