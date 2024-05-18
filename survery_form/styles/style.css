@@ -4,14 +4,18 @@ html {
 }
 
 body {
-  background-color: navy;
+  /*background-color: navy;*/
+  background-image: url(../images/work.jpg);
+  background-size: cover;
 }
 
 div {
-  background-color: white;
+  background-color: rgb(160, 82, 45);
   max-width: 1200px;
   border-radius: 3rem;
   margin: auto;
+  color: white;
+  opacity: 0.9;
 }
 
 h1,
