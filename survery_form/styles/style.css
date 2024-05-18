@@ -36,6 +36,11 @@ html {
   opacity: 0.9;
 }
 
+#results_page .container {
+  position: relative;
+  top: 10rem;
+}
+
 h1,
 p {
   text-align: center;
@@ -44,6 +49,22 @@ p {
 
 h1 {
   padding-top: 2rem;
+}
+
+.link_to_form {
+  text-align: right;
+  margin-right: 3rem;
+  padding-bottom: 1rem;
+  color: yellowgreen;
+}
+
+a {
+  font-weight: 700;
+  color: yellowgreen;
+}
+
+a:hover {
+  color: yellow;
 }
 
 form {

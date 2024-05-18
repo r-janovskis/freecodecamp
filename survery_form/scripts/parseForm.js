@@ -37,7 +37,7 @@ function gatherFormData() {
 }
 
 function handleSubmit(e) {
-  e.preventDefault();
+  //e.preventDefault();
   const output = gatherFormData();
 
   alert(output);
